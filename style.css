@@ -1,0 +1,35 @@
+@import url('assets/lib/responsive.css');
+
+:root {
+    --primary: #060b1b;
+    --success: #041240;
+
+    --primary-hover: #2563EB;
+    --secondary-hover: #163b8d;
+    --tertiary-hover: #7ca1f3;
+
+    --btn-primary: #6c97be;
+    --card: #06112a;
+
+    --secondary: #F8C8DC;
+    --accent: #A7C7E7;
+    --tertiary: #CFFFE5;
+
+    --bg-main: #03050d;
+    --bg-card: #151c29;
+    --text-main: #E2E8F0;
+    --text-secondary: #94A3B8;
+    --border: #334155;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(180deg, var(--bg-main) 14.42%, var(--primary) 91.83%);
+    margin: 0;
+    padding: 5rem;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
