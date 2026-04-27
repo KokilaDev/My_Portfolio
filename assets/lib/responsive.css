@@ -9,3 +9,14 @@
         padding: 1rem;
     }
 }
+
+/* Header */
+@media (max-width: 900px) {
+    .nav-list {
+        display: none;
+    }
+
+    .toggle_btn {
+        display: block;
+    }
+}
