@@ -247,3 +247,27 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* Assignments */
+@media (max-width: 480px) {
+    .assignment-cards {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .assignment-card h6 {
+        font-size: 16px;
+    }
+
+    .assignment-view-box {
+        width: 90px;
+        padding: 4px 12px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 992px) {
+    .assignment-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+}
