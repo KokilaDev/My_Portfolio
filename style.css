@@ -154,6 +154,122 @@ nav {
     text-shadow: 0 0 10px var(--text-main);
 }
 
+/* Hero section */
+#home {
+    padding-top: 40px;
+    margin: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.welcome-titles h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--accent);
+}
+
+.welcome-titles .heading-auto-type {
+    font-size: 32px;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.front {
+    color: var(--secondary);
+}
+
+.back {
+    color: var(--accent);
+}
+
+.soft {
+    color: var(--tertiary);
+}
+
+.hero-title {
+    font-family: "Outfit", sans-serif;
+    color: var(--text-main);
+    font-size: 60px;
+    background: linear-gradient(90deg, var(--accent), var(--secondary), var(--tertiary));
+    background-size: 200%;
+    font-weight: 700;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 4s infinite linear;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+
+#btn_explore {
+    background-color: transparent;
+    color: var(--tertiary);
+    padding: 10px 60px;
+    border: 2px solid var(--tertiary);
+    font-family: "Inter", sans-serif;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#btn_explore:hover {
+    background-color: var(--tertiary);
+    color: var(--bg-main);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(207, 255, 229, 0.3);
+}
+
+.social-icons i {
+    font-size: 30px;
+    color: var(--text-main);
+    padding: 10px;
+}
+
+.social-icons i:hover {
+    color: var(--accent);
+    text-shadow: 0 0 10px var(--accent);
+}
+
+.hero-pic {
+    width: 350px;
+    border-radius: 60px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.hero-pic:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
 /* Footer */
 footer {
     background-color: var(--bg-card);
