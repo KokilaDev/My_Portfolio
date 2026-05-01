@@ -700,6 +700,103 @@ nav {
     font-weight: 600;
 }
 
+/* Assignments */
+#assignments {
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: left;
+    padding: 1.5rem;
+}
+
+.assignments {
+    text-align: center;
+    color: var(--text-secondary);
+    position: relative;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.assignment-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.assigment-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* vertical center */
+    align-items: center;       /* horizontal center */
+    text-align: center;
+
+    margin: 0 auto;
+    padding: 20px;
+    width: 260px;
+    height: 210px;
+
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid var(--text-secondary);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.assigment-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.assigment-card img {
+    width: 100px;
+    display: block;
+    margin: 0 auto 15px auto;  /* center & add bottom spacing */
+    max-width: 100%;           /* responsive */
+    border-radius: 10px;       /* optional rounded corners */
+}
+
+.assigment-card h6 {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 25px;
+    background: linear-gradient(90deg, var(--secondary-hover) 10%, var(--primary-hover) 31%, var(--tertiary-hover) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.assignment-view-box {
+    width: 100px;
+    background-color: var(--btn-primary);
+    border-radius: 20px;
+    padding: 6px 18px;
+    margin: 10px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    transition: background 0.3s;
+}
+
+.assignment-view-box:hover {
+    background-color: var(--tertiary-hover);
+}
+
+.assignment-view-box a {
+    color: var(--text-main);
+    text-decoration: none;
+    font-weight: 600;
+}
+
 /* Footer */
 footer {
     background-color: var(--bg-card);
