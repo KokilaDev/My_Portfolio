@@ -148,11 +148,11 @@
     }
 
     .card-container {
-        width: 90%;
+        width: 80%;
     }
 
     .card-container img {
-        width: 130px;
+        width: 100px;
     }
 
     .card-container h3 {
@@ -181,7 +181,7 @@
     }
 
     .card-container img {
-        width: 150px;
+        width: 120px;
     }
 
     .card-container p {
@@ -190,5 +190,29 @@
 
     .card-container h3 {
         font-size: 22px;
+    }
+}
+
+/* Skills */
+@media (max-width: 480px) {
+    .loop {
+        gap: 20px;
+        animation-duration: 14s;
+    }
+
+    .loop img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 992px){
+    .loop {
+        gap: 30px;
+    }
+
+    .loop img {
+        width: 70px;
+        height: 70px;
     }
 }
