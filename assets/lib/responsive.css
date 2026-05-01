@@ -104,3 +104,37 @@
         margin-top: 20px;
     }
 }
+
+/* About */
+@media (max-width: 480px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .profile-pic {
+        width: 300px;
+    }
+
+    .about-me {
+        padding-left: 0;
+    }
+
+    .download-cv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 992px){
+    .profile-pic {
+        width: 300px;
+    }
+
+    .about-me {
+        padding-left: 0;
+    }
+}
