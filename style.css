@@ -530,6 +530,51 @@ nav {
     color: var(--text-secondary);
 }
 
+/* Skills */
+#skills {
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: left;
+    padding: 2rem;
+}
+
+.skills {
+    text-align: center;
+    color: var(--text-secondary);
+    position: relative;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.loop-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.loop {
+    display: flex;
+    gap: 40px;
+    width: fit-content;
+    animation: scroll 10s linear infinite;
+}
+
+.loop img {
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
 /* Footer */
 footer {
     background-color: var(--bg-card);
