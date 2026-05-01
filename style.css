@@ -455,6 +455,81 @@ nav {
     color: var(--text-main);
 }
 
+/* Services */
+#services {
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: left;
+    padding: 2rem;
+}
+
+.services {
+    text-align: center;
+    color: var(--text-secondary);
+    position: relative;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.card-container {
+    height: 400px;
+    width: 500px;
+    background-color: var(--card);
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px var(--btn-primary);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.card-container img {
+    display: block;
+    margin: 0 auto 15px auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.card-container h3 {
+    font-family: "Lusitana", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 25px;
+    background: linear-gradient(90deg, var(--secondary-hover) 10%, var(--primary-hover) 31%, var(--tertiary-hover) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-container p {
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
 /* Footer */
 footer {
     background-color: var(--bg-card);
