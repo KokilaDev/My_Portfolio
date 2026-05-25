@@ -33,3 +33,35 @@ document.getElementById("btn_explore").addEventListener("click", function () {
         behavior: "smooth"
     })
 })
+
+// Projects
+$(document).ready(function () {
+    const projectsPerPage = 6;
+    const $projects = $(".box-project-card");
+    const totalProjects = $projects.length;
+    const totalPages = Math.ceil(totalProjects / projectsPerPage);
+
+    function showPage(page) {
+        $projects.hide();
+        const start = (page - 1) * projectsPerPage;
+        const end = start + projectsPerPage;
+        $projects.slice(start, end).fadeIn(300);
+        $(".pagination button").removeClass("active");
+        $(".pagination button").eq(page - 1).addClass("active");
+    }
+
+    function createPagination() {
+        for (let i = 1; i <= totalPages; i++) {
+            $("#pagination").append(
+                `<button class="page-btn">${i}</button>`
+            );
+        }
+        $(".page-btn").click(function () {
+            const pageNumber = $(this).text();
+            showPage(pageNumber);
+        });
+    }
+
+    createPagination();
+    showPage(1);
+});
