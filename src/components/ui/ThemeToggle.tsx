@@ -9,7 +9,10 @@ const ThemeToggle = () => {
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       className="p-2 rounded-full border"
     >
-      {theme === 'dark' ? <Sun /> : <Moon />}
+      {theme === 'dark' 
+        ? <Sun size={18} /> 
+        : <Moon size={18} />
+      }
     </button>
   );
 }

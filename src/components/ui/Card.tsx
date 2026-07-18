@@ -1,10 +1,14 @@
-const Card = () => {
+import type { ReactNode } from "react";
+
+interface CardProps {
+  children: ReactNode;
+}
+
+const Card = ({ children }: CardProps) => {
   return (
-    <section className="min-h-screen flex items-center justify-center">
-      <h1 className="text-5xl font-bold">
-        Card Component
-      </h1>
-    </section>
+    <div className="rounded-2xl p-6 bg-[var(--surface)] border border-slate-200 dark:border-slate-700 shadow-lg transition hover:-translate-y-2">
+      {children}
+    </div>
   );
 };
 

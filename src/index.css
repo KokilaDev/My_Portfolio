@@ -15,6 +15,7 @@ body{
 
 :root {
   --background: #ffffff;
+  --navbar: #f1f5f9;
   --surface: #f8fafc;
   --text: #0f172a;
   --muted: #64748b;
@@ -23,6 +24,7 @@ body{
 
 .dark {
   --background: #0f172a;
+  --navbar: #1e293b;
   --surface: #1e293b;
   --text: #f8fafc;
   --muted: #cbd5e1;

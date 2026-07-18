@@ -2,9 +2,192 @@ import ThemeToggle from "../ui/ThemeToggle";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 w-full p-5 flex justify-between">
-      <h1 className="text-2xl font-bold">My Portfolio</h1>
+    <nav className="fixed top-0 w-full p-5 flex justify-between bg-[var(--navbar)] z-50">
+
+      <h1 className="text-3xl font-extrabold tracking-wide mx-5">KD</h1>
+
+      <ul className="flex space-x-15">
+
+        <li>
+          <a
+            href="#home"
+            className="
+            relative
+            pb-1
+            transition-colors
+            duration-300
+            hover:text-[var(--primary)]
+            after:absolute
+            after:left-0
+            after:bottom-0
+            after:h-[2px]
+            after:w-full
+            after:origin-left
+            after:scale-x-0
+            after:bg-[var(--primary)]
+            after:transition-transform
+            after:duration-300
+            hover:after:scale-x-100
+            "
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="#home"
+            className="
+            relative
+            pb-1
+            transition-colors
+            duration-300
+            hover:text-[var(--primary)]
+            after:absolute
+            after:left-0
+            after:bottom-0
+            after:h-[2px]
+            after:w-full
+            after:origin-left
+            after:scale-x-0
+            after:bg-[var(--primary)]
+            after:transition-transform
+            after:duration-300
+            hover:after:scale-x-100
+            "
+          >
+            About me
+          </a>
+        </li>
+        <li>
+          <a
+            href="#home"
+            className="
+            relative
+            pb-1
+            transition-colors
+            duration-300
+            hover:text-[var(--primary)]
+            after:absolute
+            after:left-0
+            after:bottom-0
+            after:h-[2px]
+            after:w-full
+            after:origin-left
+            after:scale-x-0
+            after:bg-[var(--primary)]
+            after:transition-transform
+            after:duration-300
+            hover:after:scale-x-100
+            "
+          >
+            Skills
+          </a>
+        </li>
+        <li>
+          <a
+            href="#home"
+            className="
+            relative
+            pb-1
+            transition-colors
+            duration-300
+            hover:text-[var(--primary)]
+            after:absolute
+            after:left-0
+            after:bottom-0
+            after:h-[2px]
+            after:w-full
+            after:origin-left
+            after:scale-x-0
+            after:bg-[var(--primary)]
+            after:transition-transform
+            after:duration-300
+            hover:after:scale-x-100
+            "
+          >
+            Projects
+          </a>
+        </li>
+        <li>
+          <a
+            href="#home"
+            className="
+            relative
+            pb-1
+            transition-colors
+            duration-300
+            hover:text-[var(--primary)]
+            after:absolute
+            after:left-0
+            after:bottom-0
+            after:h-[2px]
+            after:w-full
+            after:origin-left
+            after:scale-x-0
+            after:bg-[var(--primary)]
+            after:transition-transform
+            after:duration-300
+            hover:after:scale-x-100
+            "
+          >
+            Experience
+          </a>
+        </li>
+        <li>
+          <a
+            href="#home"
+            className="
+            relative
+            pb-1
+            transition-colors
+            duration-300
+            hover:text-[var(--primary)]
+            after:absolute
+            after:left-0
+            after:bottom-0
+            after:h-[2px]
+            after:w-full
+            after:origin-left
+            after:scale-x-0
+            after:bg-[var(--primary)]
+            after:transition-transform
+            after:duration-300
+            hover:after:scale-x-100
+            "
+          >
+            Education
+          </a>
+        </li>
+        <li>
+          <a
+            href="#home"
+            className="
+            relative
+            pb-1
+            transition-colors
+            duration-300
+            hover:text-[var(--primary)]
+            after:absolute
+            after:left-0
+            after:bottom-0
+            after:h-[2px]
+            after:w-full
+            after:origin-left
+            after:scale-x-0
+            after:bg-[var(--primary)]
+            after:transition-transform
+            after:duration-300
+            hover:after:scale-x-100
+            "
+          >
+            Contact me
+          </a>
+        </li>
+
+      </ul>
+
       <ThemeToggle />
+
     </nav>
   );
 };
