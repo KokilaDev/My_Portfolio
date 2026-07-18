@@ -1,10 +1,11 @@
+import ThemeToggle from "../ui/ThemeToggle";
+
 const Navbar = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center">
-      <h1 className="text-5xl font-bold">
-        Navbar Section
-      </h1>
-    </section>
+    <nav className="fixed top-0 w-full p-5 flex justify-between">
+      <h1 className="text-2xl font-bold">My Portfolio</h1>
+      <ThemeToggle />
+    </nav>
   );
 };
 
