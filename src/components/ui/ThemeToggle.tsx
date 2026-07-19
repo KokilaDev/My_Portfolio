@@ -7,7 +7,7 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      className="p-2 rounded-full border"
+      className="p-1 rounded-full border"
     >
       {theme === 'dark' 
         ? <Sun size={18} /> 

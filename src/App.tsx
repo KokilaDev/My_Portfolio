@@ -6,6 +6,7 @@ import Education from "./components/sections/Eduction"
 import Experience from "./components/sections/Experience"
 import Hero from "./components/sections/Hero"
 import Projects from "./components/sections/Projects"
+import Services from "./components/sections/Services"
 import Skills from "./components/sections/Skills"
 
 function App() {
@@ -17,9 +18,10 @@ function App() {
         <Hero />
         <About />
         <Skills />
+        <Services />
         <Projects />
-        <Experience />
         <Education />
+        <Experience />
         <Contact />
       </main>
 
