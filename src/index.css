@@ -21,13 +21,16 @@ body{
 
   --surface: #f8fafc;
   --text: #0f172a;
+  --text-secondary: #4d7fef;
   --subtext: #1e293b;
+  --subtext-secondary: #145f97;
   --muted: #64748b;
   --primary: #0284c7;
   --border: #bfcde0;
 
   --first: #c90076;
   --second: #2986cc;
+  --third: #6A329F;
 
   --footer-bg: #0f172a;
   --footer-text: #f1f5f9;

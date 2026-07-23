@@ -196,7 +196,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="w-[280px] h-[300px] md:w-[350px] md:h-[380px] rounded-[600px] shadow-xl transition duration-300 hover:scale-105 mr-10">
+        <div className="w-[280px] h-[300px] md:w-[350px] md:h-[380px] rounded-[600px] shadow-xl transition duration-300 hover:scale-105 mr-20">
           <img 
             src={heroImage} 
             alt="My Profile" 
