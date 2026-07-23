@@ -84,8 +84,9 @@ body{
 }
 
 @media(max-width:768px){
-  .hero-title{      
-    font-size: 42px;
-    text-align:center;
+  .hero-title {
+    line-height: 34px;
+    word-break: break-word;
+    padding: 20px 0;
   }
 }

@@ -89,16 +89,16 @@ const Hero = () => {
   return (
     <section 
       id="home"
-      className="relative h-screen pt-20 px-25 flex items-center justify-between bg-[var(--hero)]"
+      className="relative md:h-screen pt-20 px-20 md:px-25 flex items-center justify-between bg-[var(--hero)]"
     >
       <div
         id="particles-js"
         className="absolute inset-0 -z-0"
       />
 
-      <div className="relative z-10 flex flex-col md:flex-row items-center justify-between max-w-[1200px] w-full gap-12 md:gap-20">
+      <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between max-w-[1200px] w-full gap-12 md:gap-20">
 
-        <div className="md:pl-10">
+        <div className="pt-20 md:pl-10">
           <h2 className="text-4xl font-medium text-[var(--text)]">Hello, It's me</h2>
 
           <h1 className="hero-title">Kokila Dewmini</h1>
@@ -196,11 +196,11 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="w-[280px] h-[300px] md:w-[350px] md:h-[380px] rounded-[600px] shadow-xl transition duration-300 hover:scale-105 mr-20">
+        <div className="w-[280px] h-[300px] md:w-[350px] md:h-[380px] rounded-[60px] shadow-xl transition duration-300 hover:scale-105 mr-20 mb-20 items-center justify-center overflow-hidden">
           <img 
             src={heroImage} 
             alt="My Profile" 
-            className="w-full h-full object-cover rounded-[60px]" 
+            className="w-full h-full object-cover rounded-[60px] text-center" 
           />
         </div>
 

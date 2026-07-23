@@ -15,13 +15,13 @@ const About = () => {
           text-left
           text-4xl
           font-extrabold
-          mb-12
+          md:mb-12
         ">
           About <span className="text-[var(--text-secondary)]">Me</span>
         </h2>
       </div>
 
-      <div className="flex flex-row justify-center items-center gap-10 max-w-[1000px]">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-10 max-w-[1000px]">
 
         <div className="max-w-[400px] text-[var(--text)] w-[350px] rounded-[60px] shadow-[5px_5px_5px_rgba(0,0,0,0.5)] transition-all duration-500 ease-in-out">
           <img 
@@ -31,7 +31,7 @@ const About = () => {
           />
         </div>
 
-        <div className="max-w-[500px] text-[var(--text)] pl-25 gap-10">
+        <div className="max-w-[500px] text-[var(--text)] md:pl-25 gap-10 text-center md:text-left">
 
           <h3 className="my-2 text-lg font-bold text-[var(--text)]">
             I'm Kokila Dewmini
