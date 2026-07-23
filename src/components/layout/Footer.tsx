@@ -8,7 +8,7 @@ import { FaFacebook, FaGithub, FaLinkedin, FaMapMarkedAlt, FaTelegram } from "re
 
 const Footer = () => {
   return (
-    <footer className="bg-[var(--surface)] border-t border-[var(--border)] py-8">
+    <footer className="bg-[var(--footer-bg)] border-t border-[var(--border)] py-8 w-full bottom-0 left-0 right-0">
 
       <Container>
 
@@ -17,7 +17,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-15">
 
             <div className="flex flex-col ml-5">
-              <h2 className="text-xl font-bold text-[var(--text)] mb-2 border-l-4 border-[var(--primary)] pl-2">
+              <h2 className="text-xl font-bold text-[var(--footer-text)] mb-2 border-l-4 border-[var(--primary)] pl-2">
                 Kokila's Portfolio
               </h2>
 
@@ -36,7 +36,7 @@ const Footer = () => {
             </div>
             
             <div className="flex flex-col ml-5">
-              <h3 className="text-xl font-bold text-[var(--text)] mb-3 border-l-4 border-[var(--primary)] pl-2">
+              <h3 className="text-xl font-bold text-[var(--footer-text)] mb-3 border-l-4 border-[var(--primary)] pl-2">
                 Quick Links
               </h3>
               <ul className="flex flex-col gap-1.5 text-[var(--muted)]">
@@ -89,7 +89,7 @@ const Footer = () => {
             </div>
 
             <div className="flex flex-col ml-5">
-              <h3 className="text-xl font-bold text-[var(--text)] mb-3 border-l-4 border-[var(--primary)] pl-2">
+              <h3 className="text-xl font-bold text-[var(--footer-text)] mb-3 border-l-4 border-[var(--primary)] pl-2">
                 Contact Me
               </h3>
               <div className="flex flex-col gap-2 text-[var(--muted)] mb-3">
@@ -127,37 +127,37 @@ const Footer = () => {
               <div className="flex gap-2">
 
                 <a
-                  href="https://t.me/kokiladev"
+                  href="https://www.facebook.com/kokila.dewmini.2025"
                   target="_blank"
                   rel="noreferrer"
-                  className="p-2 rounded-full bg-[var(--background)] hover:bg-[var(--primary)] hover:text-white transition border border-[var(--muted)]"
+                  className="p-2 rounded-full text-[var(--footer-text)] bg-[var(--footer-bg)] hover:bg-[var(--primary)] hover:text-white transition border border-[var(--muted)]"
                 >
                   <FaFacebook size={20}/>
                 </a>
 
                 <a
-                  href="https://github.com/kokiladev"
+                  href="https://github.com/KokilaDev"
                   target="_blank"
                   rel="noreferrer"
-                  className="p-2 rounded-full bg-[var(--background)] hover:bg-[var(--primary)] hover:text-white transition border border-[var(--muted)]"
+                  className="p-2 rounded-full text-[var(--footer-text)] bg-[var(--footer-bg)] hover:bg-[var(--primary)] hover:text-white transition border border-[var(--muted)]"
                 >
                   <FaGithub size={20}/>
                 </a>
 
                 <a
-                  href="https://www.linkedin.com/in/kokiladev"
+                  href="https://www.linkedin.com/in/kokila-dewmini-799871318/"
                   target="_blank"
                   rel="noreferrer"
-                  className="p-2 rounded-full bg-[var(--background)] hover:bg-[var(--primary)] hover:text-white transition border border-[var(--muted)]"
+                  className="p-2 rounded-full text-[var(--footer-text)] bg-[var(--footer-bg)] hover:bg-[var(--primary)] hover:text-white transition border border-[var(--muted)]"
                 >
                   <FaLinkedin size={20}/>
                 </a>
 
                 <a
-                  href="https://t.me/kokiladev"
+                  href="https://t.me/Dew015"
                   target="_blank"
                   rel="noreferrer"
-                  className="p-2 rounded-full bg-[var(--background)] hover:bg-[var(--primary)] hover:text-white transition border border-[var(--muted)]"
+                  className="p-2 rounded-full text-[var(--footer-text)] bg-[var(--footer-bg)] hover:bg-[var(--primary)] hover:text-white transition border border-[var(--muted)]"
                 >
                   <FaTelegram size={20}/>
                 </a>

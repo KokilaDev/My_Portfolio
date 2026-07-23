@@ -8,27 +8,80 @@ html{
 
 body{
   margin:0;
-  padding:0;
   background-color: var(--background);
   color: var(--text);
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 :root {
   --background: #ffffff;
-  --navbar: #f1f5f9;
+  --navbar: #ffffff;
+  --hero: #f1f5f9;
+
   --surface: #f8fafc;
   --text: #0f172a;
+  --subtext: #1e293b;
   --muted: #64748b;
   --primary: #0284c7;
-  --border: #e2e8f0;
+  --border: #bfcde0;
+
+  --first: #c90076;
+  --second: #2986cc;
+
+  --footer-bg: #0f172a;
+  --footer-text: #f1f5f9;
 }
 
-.dark {
-  --background: #0f172a;
-  --navbar: #1e293b;
-  --surface: #1e293b;
-  --text: #f8fafc;
-  --muted: #cbd5e1;
-  --primary: #38bdf8;
-  --border: #334155;
+.front {
+  color: var(--first);
+}
+
+.back {
+  color: var(--second);
+}
+
+.soft {
+  color: var(--third);
+}
+
+.hero-title {
+  font-family: "Outfit", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+
+  background: linear-gradient(
+    90deg,
+    var(--second),
+    var(--first),
+    var(--second)
+  );
+
+  background-size: 200%;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: gradientMove 4s infinite linear;
+
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 200%;
+  }
+}
+
+@media(max-width:768px){
+  .hero-title{      
+    font-size: 42px;
+    text-align:center;
+  }
 }

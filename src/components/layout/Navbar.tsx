@@ -1,32 +1,31 @@
 import { useState } from "react";
-import ThemeToggle from "../ui/ThemeToggle";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { name: "Home", href: "#home" },
-  { name: "About Me", href: "#about" },
+  { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
   { name: "Services", href: "#services" },
   { name: "Projects", href: "#projects" },
   { name: "Education", href: "#education" },
-  { name: "Experience", href: "#experience" },
-  { name: "Contact Me", href: "#contact" },
+  // { name: "Experience", href: "#experience" },
+  { name: "Contact", href: "#contact" },
 ];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-[var(--navbar)] border-b border-[var(--border)] backdrop-blur-md">
-      <div className="max-w-7xl mx-auto px-6">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-[var(--navbar)] border-b border-transparent shadow-[0_2px_10px_rgba(0,0,0,0.1)] backdrop-blur-md">
+      <div className="max-w-7xl mx-auto px-2">
 
-        <div className="hidden lg:flex items-center justify-between h-20">
+        <div className="hidden lg:flex items-center justify-between h-16">
 
-          <h1 className="text-3xl font-extrabold tracking-wide cursor-pointer">
+          <h1 className="text-2xl font-extrabold tracking-wide cursor-pointer ml-10">
             KD
           </h1>
 
-          <ul className="flex items-center gap-10">
+          <ul className="flex items-center gap-10 mr-10">
             {navLinks.map((link) => (
               <li key={link.name}>
                 <a
@@ -34,6 +33,9 @@ const Navbar = () => {
                   className="
                     relative
                     pb-1
+                    text-sm
+                    font-bold
+                    text-[var(--text)]
                     transition-colors
                     duration-300
                     hover:text-[var(--primary)]
@@ -55,18 +57,14 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-
-          <ThemeToggle />
         </div>
 
         <div className="flex lg:hidden items-center justify-between h-20">
-          <h1 className="text-3xl font-extrabold tracking-wide">
+          <h1 className="text-2xl font-extrabold tracking-wide">
             KD
           </h1>
 
           <div className="flex items-center gap-3">
-            <ThemeToggle />
-
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-md hover:bg-[var(--surface)] transition"
