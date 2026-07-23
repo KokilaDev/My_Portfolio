@@ -4,12 +4,21 @@ import myCV from "../../assets/lib/myCV.pdf";
 
 const About = () => {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center overflow-hidden gap-10 text-left p-8">
+    <section 
+      id="about"
+      className="min-h-screen flex flex-col items-center justify-center overflow-hidden gap-10 text-left p-8"
+    >
 
       <div>
-        <h1 className="text-left text-[var(--text-secondary)] text-4xl font-extrabold">
-          About Me
-        </h1>
+        <h2 className="
+          text-[var(--text)]
+          text-left
+          text-4xl
+          font-extrabold
+          mb-12
+        ">
+          About <span className="text-[var(--text-secondary)]">Me</span>
+        </h2>
       </div>
 
       <div className="flex flex-row justify-center items-center gap-10 max-w-[1000px]">
