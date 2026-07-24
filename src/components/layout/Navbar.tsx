@@ -6,8 +6,8 @@ const navLinks = [
   { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
   { name: "Services", href: "#services" },
-  { name: "Projects", href: "#projects" },
   { name: "Education", href: "#education" },
+  { name: "Projects", href: "#projects" },
   // { name: "Experience", href: "#experience" },
   { name: "Contact", href: "#contact" },
 ];
@@ -60,11 +60,11 @@ const Navbar = () => {
         </div>
 
         <div className="flex lg:hidden items-center justify-between h-20">
-          <h1 className="text-2xl font-extrabold tracking-wide">
+          <h1 className="text-2xl font-extrabold tracking-wide ml-10">
             KD
           </h1>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 mr-10">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-md hover:bg-[var(--surface)] transition"
@@ -87,7 +87,7 @@ const Navbar = () => {
               <a
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block text-base hover:text-[var(--primary)] transition-colors duration-300"
+                className="block text-base hover:text-[var(--primary)] transition-colors duration-300 ml-5"
               >
                 {link.name}
               </a>

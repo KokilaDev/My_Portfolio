@@ -3,7 +3,7 @@ import Navbar from "./components/layout/Navbar"
 import About from "./components/sections/About"
 import Contact from "./components/sections/Contact"
 import Education from "./components/sections/Eduction"
-import Experience from "./components/sections/Experience"
+// import Experience from "./components/sections/Experience"
 import Hero from "./components/sections/Hero"
 import Projects from "./components/sections/Projects"
 import Services from "./components/sections/Services"
@@ -19,9 +19,9 @@ function App() {
         <About />
         <Skills />
         <Services />
-        <Projects />
         <Education />
-        <Experience />
+        <Projects />
+        {/* <Experience /> */}
         <Contact />
       </main>
 

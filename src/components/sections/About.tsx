@@ -15,13 +15,13 @@ const About = () => {
           text-left
           text-4xl
           font-extrabold
-          md:mb-12
+          md:mb-10
         ">
           About <span className="text-[var(--text-secondary)]">Me</span>
         </h2>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-center items-center gap-10 max-w-[1000px]">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-10 max-w-[1000px] mb-10">
 
         <div className="max-w-[400px] text-[var(--text)] w-[350px] rounded-[60px] shadow-[5px_5px_5px_rgba(0,0,0,0.5)] transition-all duration-500 ease-in-out">
           <img 
